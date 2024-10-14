@@ -4,7 +4,7 @@ import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-url = "https://www.amazon.in/s?k=iphone&crid=CHHRCIT3APZL&sprefix=iphone%2Caps%2C243&ref=nb_sb_noss_1"
+url = "https://www.amazon.in/s?k=MacBook&crid=2HVTP1XV3UZHU&sprefix=macbook%2Caps%2C248&ref=nb_sb_noss_1"
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
@@ -40,7 +40,7 @@ df['price'] = df['price'].astype(float)
 plt.figure(figsize=(10,6))
 sns.histplot(df['price'], bins=20, kde=True)
 
-plt.title('Price Distribution of iPhones')
+plt.title('Price Distribution Of The Products')
 plt.xlabel('Price (₹) (X)')
 plt.ylabel('Frequency (Y)')
 
