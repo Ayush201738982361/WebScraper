@@ -7,7 +7,10 @@ import seaborn as sns
 url = "https://www.amazon.in/s?k=iphones&crid=YPQNTL63U0XI&sprefix=iphone%2Caps%2C232&ref=nb_sb_noss_2"
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "Referer": "https://www.amazon.in/",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br"
 }
 
 data = {
