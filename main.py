@@ -4,7 +4,7 @@ import requests
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-url = "https://www.amazon.in/s?k=MacBook&crid=2HVTP1XV3UZHU&sprefix=macbook%2Caps%2C248&ref=nb_sb_noss_1"
+url = "https://www.amazon.in/s?k=iphones&crid=YPQNTL63U0XI&sprefix=iphone%2Caps%2C232&ref=nb_sb_noss_2"
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
@@ -15,7 +15,7 @@ data = {
     'price': []
 }
 
-r = requests.get(url, headers=headers)
+r = requests.get(url, headers=headers , verify=False)
 soup = BeautifulSoup(r.text, "html.parser")
 productSpans = soup.select("span.a-size-medium.a-color-base.a-text-normal")
 priceSpans = soup.select("span.a-price-whole")
